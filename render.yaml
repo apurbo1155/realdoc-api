@@ -17,3 +17,5 @@ envVars:
     value: 30
   - key: FRONTEND_URL
     value: https://realdoc-app.onrender.com
+  - key: WS_ORIGIN
+    value: https://realdoc-app.onrender.com
