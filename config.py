@@ -3,9 +3,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URI = os.getenv("MONGO_URI", "")
+MONGO_URI = os.getenv("MONGODB_URI", "")
 if not MONGO_URI:
-    raise ValueError("No MongoDB URI provided. Set MONGO_URI environment variable")
+    raise ValueError("No MongoDB URI provided. Set MONGODB_URI environment variable")
 MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "realtime-docs")
 
 # JWT Configuration
